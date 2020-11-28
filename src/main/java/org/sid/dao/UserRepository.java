@@ -10,4 +10,5 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 @RepositoryRestResource
 public interface UserRepository extends JpaRepository<User, Long> {
 	public List<User> findAll();
+	public User findByUsername(String username);
 }
