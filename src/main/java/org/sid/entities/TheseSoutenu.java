@@ -21,6 +21,8 @@ public class TheseSoutenu {
 	private Long id;
 	private String titre;
 	private Date date;
+	private String axe_recherch;
+	private String responsable;
 	@ManyToOne
 	private User user;
 	

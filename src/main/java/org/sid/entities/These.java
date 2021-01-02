@@ -18,6 +18,8 @@ public class These {
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
 	private String titre;
+	private String axe_recherch;
+	private String responsable;
 	@ManyToOne
 	private User user;
 }

@@ -54,17 +54,19 @@ public class LaboProjectApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		//accountService.saveUser(new User(null, "DA92376","Chakib","Amine", "amine@gmail.com","1234",Fonction.Administrateur));
-		//accountService.saveUser(new AppUser(null,"user","1234",null));
-		//accountService.saveRole(new AppRole(null, "SUPERADMIN"));
-		//accountService.saveRole(new AppRole(null, "ADMIN"));
-	    //accountService.saveRole(new AppRole(null, "USER"));
-	    //accountService.saveRole(new AppRole(null, "PROF"));
+		//
 		
-		//accountService.AddRoleToUser("DA92376", "USER");
-		//accountService.AddRoleToUser("DA92376", "ADMIN");
-		//accountService.AddRoleToUser("DA92376", "SUPERADMIN");
-		//accountService.AddRoleToUser("DA92376", "PROF");
+		/*accountService.saveUser(new User(null, "DA92376","Chakib","Amine", "amine@gmail.com","1234",Fonction.Administrateur));
+		//accountService.saveUser(new AppUser(null,"user","1234",null));
+		accountService.saveRole(new AppRole(null, "SUPERADMIN"));
+		accountService.saveRole(new AppRole(null, "ADMIN"));
+	    accountService.saveRole(new AppRole(null, "USER"));
+	    accountService.saveRole(new AppRole(null, "PROF"));
+		
+		accountService.AddRoleToUser("DA92376", "USER");
+		accountService.AddRoleToUser("DA92376", "ADMIN");
+		accountService.AddRoleToUser("DA92376", "SUPERADMIN");
+		accountService.AddRoleToUser("DA92376", "PROF");*/
 		//User us2 = new User();
 		//us2.setNom("Mohammed");
 		//us2.setUsername("M20142151");
