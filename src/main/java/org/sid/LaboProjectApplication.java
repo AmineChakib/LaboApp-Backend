@@ -47,34 +47,36 @@ public class LaboProjectApplication implements CommandLineRunner{
 	public BCryptPasswordEncoder passwordEncoder() {
 	    return new BCryptPasswordEncoder();
 	}
-	
+	 
 	public static void main(String[] args) {
 		SpringApplication.run(LaboProjectApplication.class, args);
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
-		accountService.saveUser(new User(null, "DA92376","Chakib","Amine", "amine@gmail.com","1234",Fonction.Administrateur));
+		//accountService.saveUser(new User(null, "DA92376","Chakib","Amine", "amine@gmail.com","1234",Fonction.Administrateur));
 		//accountService.saveUser(new AppUser(null,"user","1234",null));
-		accountService.saveRole(new AppRole(null, "SUPERADMIN"));
-		accountService.saveRole(new AppRole(null, "ADMIN"));
-		accountService.saveRole(new AppRole(null, "USER"));
+		//accountService.saveRole(new AppRole(null, "SUPERADMIN"));
+		//accountService.saveRole(new AppRole(null, "ADMIN"));
+	    //accountService.saveRole(new AppRole(null, "USER"));
+	    //accountService.saveRole(new AppRole(null, "PROF"));
 		
-		accountService.AddRoleToUser("DA92376", "USER");
-		accountService.AddRoleToUser("DA92376", "ADMIN");
-		accountService.AddRoleToUser("DA92376", "SUPERADMIN");
-		User us2 = new User();
-		us2.setNom("Mohammed");
-		us2.setUsername("M20142151");
-		us2.setEmail("mohammed@gmail.com");
+		//accountService.AddRoleToUser("DA92376", "USER");
+		//accountService.AddRoleToUser("DA92376", "ADMIN");
+		//accountService.AddRoleToUser("DA92376", "SUPERADMIN");
+		//accountService.AddRoleToUser("DA92376", "PROF");
+		//User us2 = new User();
+		//us2.setNom("Mohammed");
+		//us2.setUsername("M20142151");
+		//us2.setEmail("mohammed@gmail.com");
 		//Equipe e1 = equipeRepository.save(us2);
-		Equipe e1 = equipeRepository.save(new Equipe(null, null, null));
-		Equipe e2 = equipeRepository.save(new Equipe(null, null, null));
+		//Equipe e1 = equipeRepository.save(new Equipe(null, null, null));
+		//Equipe e2 = equipeRepository.save(new Equipe(null, null, null));
 		
 		
-		These t1 = new These(null, "Titre", null);
+		//These t1 = new These(null, "Titre", null);
 		
-		TheseSoutenu ts1 = new TheseSoutenu(null, "These Soutenu 1", new Date(), null);
+		//TheseSoutenu ts1 = new TheseSoutenu(null, "These Soutenu 1", new Date(), null);
 		
 		
 		
@@ -88,8 +90,8 @@ public class LaboProjectApplication implements CommandLineRunner{
 		userRepository.save(us4);
 		equipeRepository.save(e1);
 		equipeRepository.save(e2);*/
-		theseRepository.save(t1);
-		theseSoutenuRepository.save(ts1);
+		//theseRepository.save(t1);
+		//theseSoutenuRepository.save(ts1);
 		
 		
 	}

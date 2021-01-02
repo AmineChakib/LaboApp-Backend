@@ -30,10 +30,15 @@ public class AccountRestController {
 		appUser.setPrenom(userForm.getPrenom());
 		accountService.saveUser(appUser);
 		accountService.AddRoleToUser(userForm.getUsername(), "USER");
-		System.out.println("**************************"+userForm.isAdmin);
-		if(userForm.isAdmin == true) {
+		
+		if(userForm.isProf() == true) {
+			accountService.AddRoleToUser(userForm.getUsername(), "PROF");
+		}
+		
+		if(userForm.isAdmin() == true) {
 			accountService.AddRoleToUser(userForm.getUsername(), "ADMIN");
 		}
+		
 		if(userForm.isSuperAdmin() == true) {
 			accountService.AddRoleToUser(userForm.getUsername(), "SUPERADMIN");
 		}

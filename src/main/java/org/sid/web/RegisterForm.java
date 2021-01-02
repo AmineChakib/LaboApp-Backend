@@ -19,5 +19,5 @@ public class RegisterForm {
 	private Fonction fonction;
 	public boolean isAdmin=false;
 	public boolean isSuperAdmin= false;
-
+	public boolean isProf= false;
 }
